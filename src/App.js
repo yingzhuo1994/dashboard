@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import './App.css'
+import './App.css';
+
 
 const App = () => {
-  const activeMenu = true;
-  const currentMode = false;
+
   return (
-    <div className={currentMode === 'Dark' ? 'dark' : ''}>
+    <div>
       <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
@@ -19,8 +19,7 @@ const App = () => {
             >
               <button
                 type="button"
-                // onClick={() => setThemeSettings(true)}
-                // style={{ background: currentColor, borderRadius: '50%' }}
+                style={{ background: "blue", borderRadius: '50%' }}
                 className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
               >
                 <FiSettings />
@@ -28,13 +27,11 @@ const App = () => {
 
             </TooltipComponent>
           </div>
+
         </div>
       </BrowserRouter>
     </div>
   );
 };
 
-
-export default App
-
-// {activeMenu ? (<div>Siderbar</div>) : (<div> Siderbar w-0</div>)}
+export default App;
