@@ -24,6 +24,10 @@ module.exports = {
     'linebreak-style': 0,
     'react/state-in-constructor': 0,
     'import/prefer-default-export': 0,
+    "import/no-unresolved": [
+      2,
+      { "caseSensitive": false }
+    ],
     'max-len': [
       2,
       550,

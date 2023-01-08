@@ -3,14 +3,15 @@ import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent,
 
 import { Header } from '../components';
 import { EditorData } from '../data/dummy';
+
 const toolbarSettings = {
   items: ['Bold', 'Italic', 'Underline', 'StrikeThrough',
-      'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
-      'LowerCase', 'UpperCase', '|',
-      'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
-      'Outdent', 'Indent', '|',
-      'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
-      'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
+    'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
+    'LowerCase', 'UpperCase', '|',
+    'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
+    'Outdent', 'Indent', '|',
+    'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
+    'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
 };
 
 const Editor = () => (
